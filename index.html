@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="public/Einstein Digital.png" />
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Einstein Website</title>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-900 text-white">
+        <header class="fixed w-full bg-gray-900 shadow-md z-50">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-400">
+                    <span class="font-extrabold">Einstein</span><span class="font-light">Dipondo</span>
+                </a>
+                <h1 class="font-bold text-shadow-blue-500">Chelsea💙</h1>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#portfolio" class="nav-link text-gray-300 hover:text-blue-400">Portfolio</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-blue-400">Skills</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-blue-400">About</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400">Contact</a>
+                </nav>
+                <button type="button" id="menu-toggle" class="md:hidden text-2xl rounded-md bg-blue-500 px-3 text-gray-300 cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden text-xl flex items-center px-10 min-h-[30vh] left-0 mx-auto">
+                     <nav class="nav-links flex mx-auto md:flex-row flex-col items-center space-y-8">
+                        <a href="#portfolio" class="nav-link mb-2 text-gray-300 hover:text-blue-400">Portfolio</a>
+                        <a href="#skills" class="nav-link mb-2 text-gray-300 hover:text-blue-400">Skills</a>
+                        <a href="#about" class="nav-link mb-2 text-gray-300 hover:text-blue-400">About</a>
+                        <a href="#contact" class="nav-link mb-2  text-gray-300 hover:text-blue-400">Contact</a>
+                     </nav>
+            </div>
+        </header>
+        <main>
+            <section class="relative min-h-screen flex items-center">
+                <div class="container mx-auto px-6 z-10 flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                        <h class="text-4xl md:text-6xl font-bold mb-4">
+                            <span class="block text-gray-300">Hi, I'm Einstein Dipondo</span>
+                            <span class="text-blue-600">FrontEnd Developer</span>
+                        </h>
+                        <p class="text-xl md:text-3xl text-gray-300 mb-8">Crafting beautiful and responsive user interfaces with modern frontend technologies. Specializing in creating engaging web experiences that users love.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                            <a href="#portfolio" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md shadow-lg hover:shadow-xl cursor-pointer !rounded-button whitespace-nowrap">
+                                View My Work
+                            </a>
+                            <a href="#contact" class="px-8 py-3 bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-300 font-medium rounded-md cursor-pointer !rounded-button whitespace-nowrap">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl">
+                            <img class="w-full h-full object-cover object-top" src="public/WhatsApp Image 2025-05-13 at 11.00.49_b386706b.jpg" alt="Einstein">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <a href="#portfolio" class="text-blue-400 text-3xl cursor-pointer">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </section>
+            <section id="portfolio" class="bg-gray-800 py-5">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 ">
+                        <h2 class="text-3xl md:text-4xl font-bold mt-10 mb-4">My Portfolio</h2>
+                        <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+                        <p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+                         Explore some of my recent projects that showcase my skills and expertise in web development.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                            <div class="relative h-60 overflow-hidden">
+                                <img src="public/d050b0440b146c69dfcd900657c34139.jpg" alt="E-Commerce Platform" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4">
+                                        <a
+                                        href="#"
+                                        class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                                        >View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                                <p class="text-gray-400 mb-4">
+                                A full-featured online store with product management, cart functionality, and secure checkout.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">React</span>
+                                    <span class="px-3 py-1 bg-green-900 text-green-200 rounded-full text-sm">Node.js</span>
+                                    <span class="px-3 py-1 bg-purple-900 text-purple-200 rounded-full text-sm">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                            <div class="relative h-60 overflow-hidden">
+                                <img src="public/86fdaf3cfd9fd876d3c381b5c4836fe2.jpg"alt="Task Management App" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4">
+                                        <a
+                                        href="#"
+                                        class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                                        >View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                                <p class="text-gray-400 mb-4">
+                                A collaborative task management tool with real-time updates and progress tracking.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">Vue.js</span>
+                                    <span class="px-3 py-1 bg-yellow-900 text-green-200 rounded-full text-sm">Firebase</span>
+                                    <span class="px-3 py-1 bg-pink-900 text-purple-200 rounded-full text-sm">Sass</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                            <div class="relative h-60 overflow-hidden">
+                                <img src="public/108189442e57d5ccd5df50a873cd2979.jpg" alt="Financial Dashboard" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <div class="p-4">
+                                        <a
+                                        href="#"
+                                        class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                                        >View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Financial Dashboard</h3>
+                                <p class="text-gray-400 mb-4">
+                                An interactive dashboard for financial data visualization and analysis.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">React</span>
+                                    <span class="px-3 py-1 bg-red-900 text-green-200 rounded-full text-sm">CSS</span>
+                                    <span class="px-3 py-1 bg-indigo-900 text-purple-200 rounded-full text-sm">Typescript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12 mb-6">
+                        <a href="#" class="px-8 py-3 bg-blue-400 hover:bg-blue-700 text-white font-medium rounded-md">View All Projects</a>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="py-20 bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                      <h2 class="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
+                      <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+                      <p class="text-gray-300 mt-6 mx-auto">My technical toolkit and areas of expertise in web development.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                          <div class="text-center mb-6">
+                            <div class="inline-block p-4 rounded-full bg-blue-900 text-blue-400 mb-4">
+                                <i class="fas fa-code text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Core Technologies</h3>
+                          </div>
+                          <div class="space-y-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">HTML5/CSS3</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 98%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Javascript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 70%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Vue.js</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 45%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Tailwind CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <div class="text-center mb-6">
+                                <div class="inline-block rounded-full p-4 bg-green-900 text-green-400 mb-4"><i class="fas fa-paint-brush text-3xl"></i></div>
+                                <h3 class="text-xl font-bold">Design & Frameworks</h3>
+                            </div>
+                            <div class="space-y-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Tailwind CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Sass/SCSS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 60%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Figma</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 65%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">UI/UX Design</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 88%;"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <div class="text-center mb-6">
+                                <div class="inline-block rounded-full p-4 bg-purple-900 text-purple-400 mb-4"><i class="fas fa-tools text-3xl"></i></div>
+                                <h3 class="text-xl font-bold">Tools & Others</h3>
+                            </div>
+                            <div class="space-y-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Git & Github</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-400 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Docker</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-400 h-2 rounded-full" style="width: 60%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">AWS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-400 h-2 rounded-full" style="width: 70%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">UI/UX Design</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-400 h-2 rounded-full" style="width: 88%;"></div>
+                            </div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Agile/Scrum</span>
+                                <span>72%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-400 h-2 rounded-full" style="width: 72%;"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-20 bg-gray-800">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                        <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+                        <p class="text-gray-300 mt-6 max-w-2xl mx-auto">Get to know more about me, my background, and what drives me as a developer.</p>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-12">
+                        <div class="w-full md:w-2/5">
+                            <div class="rounded-lg overflow-hidden shadow-xl">
+                                <img src="public/Webi.jpg" alt="Tech world" class="w-full h-full object-cover object-top">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-3/5">
+                            <h3 class="text-2xl font-bold mb-4">My Journey</h3>
+                            <p class="text-gray-300 mb-6">
+                                I'm a passionate frontend developer with over 1 year of experience crafting beautiful user interfaces. My journey in web development began with a deep fascination for creating visually stunning and intuitive web experiences that make a real impact.
+                            </p>
+                            <p class="text-gray-300 mb-6">
+                                I specialize in translating design concepts into responsive, pixel-perfect websites using modern frontend technologies. My approach combines creative design thinking with technical expertise in HTML, CSS, and JavaScript frameworks to deliver exceptional user experiences.
+                            </p>
+                            <div class="mb-8">
+                                <h4 class="text-xl font-semibold mb-3">Experience</h4>
+                                <div class="space-y-4">
+                                    <div class="flex">
+                                        <div class="mr-4 text-blue-400">
+                                            <i class="fas fa-briefcase text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold">Senior Frontend Developer</h5>
+                                            <p class="text-sm text-gray-400">Einstein Digital | 2024 - Present</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="mr-4 text-blue-400">
+                                            <i class="fas fa-briefcase text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold">UI Developer</h5>
+                                            <p class="text-sm text-gray-400">Einstein Digital | 2025 - Present </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <h4 class="text-xl font-semibold mb-3">Education</h4>
+                                <div class="space-y-4">
+                                    <div class="flex">
+                                        <div class="mr-4 text-blue-400">
+                                            <i class="fas fa-graduation-cap text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold">Diploma in web development using HTML and CSS</h5>
+                                            <p class="text-sm text-gray-400">Alison | 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="mr-4 text-blue-400">
+                                            <i class="fas fa-graduation-cap text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold">Responsive Web Design</h5>
+                                            <p class="text-sm text-gray-400">Freecodecamp | 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="mr-4 text-blue-400">
+                                            <i class="fas fa-graduation-cap text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold">Software Engineering</h5>
+                                            <p class="text-sm text-gray-400">ALX | Present</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-medium rounded-md inline-flex items-center cursor-pointer">
+                                <i class="fas fa-download mr-2"></i>
+                                 Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 bg-gray-900">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                        <div class="w-20 h-1 bg-blue-400 mx-auto"></div>
+                        <p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+                            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!
+                        </p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="w-full md:w-1/2">
+                            <form class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-800 text-white" placeholder="Einstein"/>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-800 text-white" placeholder="einstein@gmail.com"/>
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-800 text-white" placeholder="Project Inquiry"/>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+                                    <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent bg-gray-800 text-white resize-none" placeholder="Tell me about your project...."></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-medium rounded-md cursor-pointer">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-gray-800 p-8 rounded-lg shadow-lg h-full">
+                                <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-start">
+                                        <div class="mr-4 p-3 bg-blue-900 rounded-full text-blue-400">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Email</h4>
+                                            <p class="text-gray-300">einstenmarto30@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="mr-4 p-3 bg-blue-900 rounded-full text-blue-400">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Location</h4>
+                                            <p class="text-gray-300">Komarock, Nairobi</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="mr-4 p-3 bg-blue-900 rounded-full text-blue-400">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Working Hours</h4>
+                                            <p class="text-gray-300">Monday - Saturday, 9AM - 6PM EAT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <h4 class="font-semibold mb-4">Connect With Me</h4>
+                                    <div class="flex space-x-4">
+                                        <a href="https://github.com/Einsteinke-hub" class="p-3 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/einstein-dipondo-13b322362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-3 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://x.com/cfc_Einstein?t=gTgSijSYiV_gYvHS1MmQog&s=09" class="p-3 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/einsteinmusundi/profilecard/?igsh=MWs3YXFqMDZmZWw1" class="p-3 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-8 md:mb-0">
+                        <a href="#" class="text-2xl font-bold text-blue-400"><span class="font-extrabold">Einstein</span><span class="font-light ml--2">Dipondo</span></a>
+                        <p class="mt-2 text-gray-400">Frontend Developer</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-6 mb-8 md:mb-0 items-center space-x-8">
+                       <a href="#portfolio" class="nav-link text-gray-300 hover:text-blue-400">Portfolio</a>
+                       <a href="#skills" class="nav-link text-gray-300 hover:text-blue-400">Skills</a>
+                       <a href="#about" class="nav-link text-gray-300 hover:text-blue-400">About</a>
+                       <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400">Contact</a> 
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Einsteinke-hub" class="p-2 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/einstein-dipondo-13b322362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-2 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/cfc_Einstein?t=gTgSijSYiV_gYvHS1MmQog&s=09" class="p-2 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/einsteinmusundi/profilecard/?igsh=MWs3YXFqMDZmZWw1" class="p-2 bg-gray-700 rounded-full text-gray-300 hover:bg-blue-900 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400">©2025 Einstein Dipondo. All rights reserved.</p>
+                    <a
+                    href="#"
+                    id="backToTopButton"
+                    class="mt-4 md:mt-0 p-2 rounded-full bg-blue-400 hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
+                    aria-label="Back to top"
+                    >
+                    <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script>
+
+    document.getElementById('menu-toggle').addEventListener('click',function(){
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    })
+
+    document.getElementsByClassName('fa-bars')[0].addEventListener('click',function(){
+        if(this.classList.contains('fa-bars')){
+            this.classList.replace('fa-bars','fa-xmark');
+        } else  {
+            this.classList.replace('fa-xmark','fa-bar');
+        }
+    })
+
+    const fontAwesomeLink = document.createElement('link');
+    fontAwesomeLink.rel = 'stylesheet';
+    fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+    document.head.appendChild(fontAwesomeLink);
+
+</script>
+</body>
+</html>
