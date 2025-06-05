@@ -11,6 +11,8 @@
     --color-yellow-900: oklch(42.1% 0.095 57.708);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-700: oklch(52.7% 0.154 150.069);
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -218,15 +220,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .top-\[2\%\] {
-    top: 2%;
-  }
-  .top-\[5\%\] {
-    top: 5%;
-  }
-  .top-\[9\%\] {
-    top: 9%;
-  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
@@ -238,9 +231,6 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
-  }
-  .left-40 {
-    left: calc(var(--spacing) * 40);
   }
   .z-10 {
     z-index: 10;
@@ -305,9 +295,6 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -320,8 +307,11 @@
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
   }
   .block {
     display: block;
@@ -361,9 +351,6 @@
   }
   .min-h-\[30vh\] {
     min-height: 30vh;
-  }
-  .min-h-\[60vh\] {
-    min-height: 60vh;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -608,9 +595,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -700,6 +684,9 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
+  .text-blue-700 {
+    color: var(--color-blue-700);
+  }
   .text-gray-300 {
     color: var(--color-gray-300);
   }
@@ -711,6 +698,12 @@
   }
   .text-green-400 {
     color: var(--color-green-400);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
+  .text-green-700 {
+    color: var(--color-green-700);
   }
   .text-purple-200 {
     color: var(--color-purple-200);
@@ -869,11 +862,6 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
-    }
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
     }
   }
   .sm\:flex-row {
